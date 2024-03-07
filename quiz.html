@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz</title>
-    <nav>
-      <a href="./index.html">Brown Bear</a>
-      <a href="./media.html">Media</a>
-      <a href="./quiz.html">Quiz</a>
-    </nav>
-    <meta charset="utf-8">
+    <!-- Meta Data -->
     <meta name="description" content="My First Web Site">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Logan Connors">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta lang="english">
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/quiz_fa/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/quiz_fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/quiz_fav/favicon-16x16.png">
     <link rel="manifest" href="./favicon/quiz_fav/site.webmanifest">
-    
+
     <!-- Google's MDL -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./css/quiz.css">
+    <!-- Title -->
+    <title>Brown Bear Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
   </head>
+  <body>
+    <nav>
+        <a href="./index.html">Brown Bear</a>
+        <a href="./media.html">Media</a>
+        <a href="./quiz.html"> Brown Bear Quiz</a>
+    </nav>
+    <h2>Brown Bear Quiz</h2>
+    <div id="quiz-container">
+
+    <!-- Question 1 -->
+    <div class="question" id="q1">
+      <p>1. What is the conservation status of brown bears?</p>
+      <input type="radio" name="q1" value="a"> Endangered<br>
+      <input type="radio" name="q1" value="b"> Least Concern<br>
+      <input type="radio" name="q1" value="c"> Threatened<br>
+    </div>
+      
+    <!-- Question 2 -->
+    <div class="question" id="q2">
+      <p>2. How many subspecies are there within the brown bear species?</p>
+      <input type="radio" name="q2" value="a"> One<br>
+      <input type="radio" name="q2" value="b"> Two<br>
+      <input type="radio" name="q2" value="c"> Many<br>
+    </div>
+      
+    <!-- Question 3 -->
+    <div class="question" id="q3">
+      <p>3. Where do brown bears <strong>typically</strong> hibernate?</p>
+      <input type="radio" name="q3" value="a"> Caves<br>
+      <input type="radio" name="q3" value="b"> Trees<br>
+      <input type="radio" name="q3" value="c"> Burrows<br>
+    </div>
+      
+    <!-- Question 4 -->
+    <div class="question" id="q4">
+      <p>4. What do brown bears <strong>primarily</strong> eat?</p>
+      <input type="radio" name="q4" value="a"> Fish<br>
+      <input type="radio" name="q4" value="b"> Grass<br>
+      <input type="radio" name="q4" value="c"> Berries<br>
+    </div>
+      
+    <!-- Question 5 -->
+    <div class="question" id="q5">
+      <p>5. How much <strong>Bigger</strong> are Male Brown Bears than Female Brown Bears?</p>
+      <input type="radio" name="q5" value="a"> 10% Bigger<br>
+      <input type="radio" name="q5" value="b"> 30% Bigger<br>
+      <input type="radio" name="q5" value="c"> 80% Bigger<br>
+    </div>
+
+      <div class="question" id="q6">
+        <p>1. Which one is a Brown Bear species?</p>
+        <input type="radio" name="q6" value="a"> Arctoes<br>
+        <input type="radio" name="q6" value="b"> Hillbilly<br>
+        <input type="radio" name="q6" value="c"> Nelsoni<br>
+        <input type="radio" name="q6" value="a"> Arctoes<br>
+      </div>
+
+      <div class="question" id="q7">
+        <p>1. What Country has a small Population of brown bears?</p>
+        <input type="radio" name="q7" value="a"> Turkmanistan<br>
+        <input type="radio" name="q7" value="b"> Belarus<br>
+        <input type="radio" name="q7" value="c"> Uzibekistan<br>
+      </div>
+      <br></br>
+
+    <p>The Button below is the Quiz Submit Button, press it to see your results</p>
+    <!-- Submit Button -->
+    <button onclick="checkAnswers()">Submit Answers</button>
+      
+    <!-- Score Display -->
+    <div id="score"></div>
+    <div id="results"></div>
+    <script src="./js/quiz.js"></script>
+  </body>
 </html>
