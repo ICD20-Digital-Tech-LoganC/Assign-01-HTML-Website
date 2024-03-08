@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  
   <!-- Meta Data -->
   <meta name="description" content="My First Web Site">
   <meta name="keywords" content="immaculata, ics2o">
@@ -11,13 +12,14 @@
   <meta lang="english">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/quiz_fa/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/quiz_fav/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/quiz_fav/favicon-16x16.png">
-  <link rel="manifest" href="./favicon/quiz_fav/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav_index_web/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav_index_web/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav_index_web/favicon-16x16.png">
+  <link rel="manifest" href="./fav_index_web/site.webmanifest">
 
   <!-- Google's MDL -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
   <!-- Title -->
   <title>Brown Bear Quiz</title>
   <link rel="stylesheet" href="css/quiz.css">
@@ -72,6 +74,7 @@
       <input type="radio" name="q5" value="c"> 80% Bigger<br>
     </div>
 
+    <!-- Question 6 -->
     <div class="question" id="q6">
       <p>1. Which one is a Brown Bear species?</p>
       <input type="radio" name="q6" value="a"> Arctoes<br>
@@ -80,6 +83,7 @@
       <input type="radio" name="q6" value="a"> Arctoes<br>
     </div>
 
+    <!-- Question 7 -->
     <div class="question" id="q7">
       <p>1. What Country has a small Population of brown bears?</p>
       <input type="radio" name="q7" value="a"> Turkmanistan<br>
@@ -89,10 +93,12 @@
     <br></br>
 
     <p>The Button below is the Quiz Submit Button, press it to see your results</p>
+    
     <!-- Submit Button -->
     <button onclick="checkAnswers()">Submit Answers</button>
     <script>
       function checkAnswers() {
+        
         // Array to store correct answers
         const correctAnswers = ['b', 'a', 'a', 'c', 'b', 'c', 'b'];
 
@@ -125,9 +131,11 @@
           resultsDisplay.textContent = "Congratulations! You got all the answers correct!";
         } else {
           resultsDisplay.textContent = "Keep learning! You can improve your score.";
-        }
+        } 
+
       }
     </script>
+    
     <!-- Score Display -->
     <div id="score"></div>
     <div id="results"></div>
