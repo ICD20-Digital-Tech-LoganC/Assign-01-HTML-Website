@@ -5,5 +5,16 @@ html {
 
 header {
   background-color: #00ffff;
+  color: black;
   text-align: right;
+}
+
+body {
+  color: black;
+  text-align: left;
+}
+
+#page_title {
+  color: brown;
+  text-align: left;
 }
